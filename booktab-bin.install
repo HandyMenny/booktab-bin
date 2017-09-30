@@ -1,0 +1,8 @@
+post_install() {
+xdg-desktop-menu install --novendor /usr/share/applications/booktab-bin.desktop
+}
+
+pre_remove() {
+xdg-desktop-menu uninstall --novendor /usr/share/applications/booktab-bin.desktop
+}
+
